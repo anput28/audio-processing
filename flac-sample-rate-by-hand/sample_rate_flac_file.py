@@ -24,6 +24,6 @@ def get_sample_rate(song_bytes):
     return int(bits[:20], 2) # Rimuovo i 4 bit in più e converto il valore binario in decimale
 
 
-song_bytes = read_flac_song('08 - Fire In Cairo.flac')
+song_bytes = read_flac_song('../tracks/10 - Fire In Cairo.flac')
 sample_rate = get_sample_rate(song_bytes)
 print(f'Sample rate: {sample_rate} Hz')
